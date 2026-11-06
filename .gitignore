@@ -1,0 +1,6 @@
+models/*.bin
+engine/speculative_decoding
+frontend/node_modules/
+frontend/dist/
+__pycache__/
+.venv/
