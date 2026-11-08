@@ -9,9 +9,7 @@ target model checks all of them in one batched pass. The UI shows every step:
 - **A speedometer** shows the engine's measured tokens per second against a notch for the target model
   decoding alone. Streaks of fully accepted steps push the needle past it and light the gauge up.
 
-The inference engine in `engine/` is a minimal C implementation of speculative sampling
-(Leviathan et al., 2023) built on Karpathy's [llama2.c](https://github.com/karpathy/llama2.c), included
-under the MIT license (see `engine/License`).
+The inference engine in `engine/` is a minimal C implementation of speculative sampling built on Karpathy's [llama2.c](https://github.com/karpathy/llama2.c)
 
 ```
 React (Vite)  ──WebSocket──▶  FastAPI  ──subprocess, JSON lines──▶  speculative_decoding.c  -j 1
